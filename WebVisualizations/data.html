@@ -1,6 +1,3 @@
-
-
-
 <html>
     <head>
         <title>Aurora Borealis: Data</title>
@@ -12,9 +9,17 @@
         }
     </style>
     <body class = "center">
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\homepage.html">- Home -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\comparison.html">- Comparison Overview -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\viz1.html">- Temperature -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\viz1.html">- Humidity -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\viz3.html">- Cloudiness -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\viz4.html">- Wind Speed -</a>
+        <a href="C:\Users\bates\Web-Design-Challenge\WebVisualizations\data.html">- Data -</a>
+
         <h1>Data</h1>
         <p class = "fsize16">This is the data behind the scatterplots. It shows that... </p>
-        import os
+        <import os
         path = os.path.join("..","Resources", "cities.csv")
         data = file.read()
         data = pd.to_html(data)
@@ -28,7 +33,7 @@
         display(HTML(data))
         with open("table.html", "w", encoding="utf-8") as file:
             file.write(data)
-        os.startfile("table.html")
+        os.startfile("table.html")>
 
     </body>
 </html>
