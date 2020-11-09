@@ -19,21 +19,6 @@
 
         <h1>Data</h1>
         <p class = "fsize16">This is the data behind the scatterplots. It shows that... </p>
-        <import os
-        path = os.path.join("..","Resources", "cities.csv")
-        data = file.read()
-        data = pd.to_html(data)
-        data = data.splitlines()
-        data = [d.strip() for d in data]
-        data = [f"<tr><td>{d}</tr>" for d in data if d.strip() != ""]
-        data = "<table border=1>" + "".join(data) + "</table>"
-        #display(HTML(data))
-        data = data.replace("    ","")
-        data = data.replace(",","</td><td>")
-        display(HTML(data))
-        with open("table.html", "w", encoding="utf-8") as file:
-            file.write(data)
-        os.startfile("table.html")>
-
+       
     </body>
 </html>
